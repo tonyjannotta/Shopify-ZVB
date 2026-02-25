@@ -18,7 +18,7 @@
   "></div>
 
   <!-- Text overlay -->
-   <div style="
+   <div class="hero-overlay" style="
   position:absolute;
   top:50%;
   left:6%;
@@ -45,8 +45,8 @@
     Expertly sourced beans, freshly roasted for bold flavor and smooth finishes.
   </div>
   <!-- CTA Button (on top of video, under subtitle) -->
-    <a href="/collections" class="button button--primary" style="display:inline-flex; align-items:center; justify-content:center; height:48px; min-width:160px; text-align:center;">
-      Shop All Collection
+    <a href="/collections" class="button button--primary" style="display:inline-flex; align-items:center; justify-content:center; height:48px; min-width:160px; text-align:center; margin-top:32px;">
+      SHOP ALL COLLECTION
     </a>
 </div>
 </div>
@@ -56,6 +56,28 @@
     .hero-title,
     .subtitle {
       white-space: normal !important;
+    }
+    .hero-title {
+      font-size: 1.3rem !important;
+      line-height: 1.2 !important;
+    }
+    .subtitle {
+      font-size: 1rem !important;
+      padding-top: 12px !important;
+    }
+    .button--primary {
+      min-width: 90px !important;
+      height: 28px !important;
+      font-size: 1.1rem !important;
+      margin-top: 12px !important; /* override desktop margin */
+      padding: 0 12px !important;
+    }
+    .hero-overlay {
+      width: 94% !important;
+      left: 3% !important;
+      top: 54% !important;
+      transform: translateY(-54%) !important;
+      padding: 0 !important;
     }
   }
 </style>
